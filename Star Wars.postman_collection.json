@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "01f9f588-7b75-4307-91c1-9f298c73dc51",
+		"name": "Star Wars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31461200"
+	},
+	"item": [
+		{
+			"name": "Planets",
+			"item": [
+				{
+					"name": "planets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/planets",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"planets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "planets",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ganimedes\",\n    \"rotationPeriod\": 2,\n    \"orbitalPerior\": 375,\n    \"diameter\": 1000,\n    \"climate\": \"Monzonico\",\n    \"gravity\": \"1 standard\",\n    \"terrain\": \"desert\",\n    \"surfaceWater\": \"65\",\n    \"population\": \"0\",\n    \"url\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/planets",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"planets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planets By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/planet/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"planet",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planets By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/planet/65",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"planet",
+								"65"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planets By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 64,\n    \"name\": \"Ganimedes\",\n    \"rotationPeriod\": 4,\n    \"orbitalPeriod\": null,\n    \"diameter\": 1000,\n    \"climate\": \"Lluvia acida\",\n    \"gravity\": \"1 standard\",\n    \"terrain\": \"desert\",\n    \"surfaceWater\": \"65\",\n    \"population\": \"0\",\n    \"url\": \"\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/planet/64",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"planet",
+								"64"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Affiliations",
+			"item": [
+				{
+					"name": "Affiliations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/affiliations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"affiliations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Affiliations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"affiliation\": \"Ivan order\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/affiliations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"affiliations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Affiliations By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/affiliation/17",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"affiliation",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Affiliation By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/affiliation/15",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"affiliation",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Affiliation By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 17,\n    \"affiliation\": \"Ivan order2\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/affiliation/17",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"affiliation",
+								"17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Characters",
+			"item": [
+				{
+					"name": "Characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/characters",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"characters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Characters",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ivan Navarro\",\n    \"height\": 183,\n    \"mass\": 82,\n    \"hairColor\": \"blond\",\n    \"skinColor\": \"fair\",\n    \"eyeColor\": \"blue\",\n    \"birthYear\": \"19BBY\",\n    \"gender\": \"male\",\n    \"url\": \"https://swapi.co/api/people/1/\",\n    \"planet\": {\n        \"id\": 2,\n        \"name\": \"Tatooine\",\n        \"rotationPeriod\": 23,\n        \"orbitalPeriod\": 304,\n        \"diameter\": 10465,\n        \"climate\": \"arid\",\n        \"gravity\": \"1 standard\",\n        \"terrain\": \"desert\",\n        \"surfaceWater\": \"1\",\n        \"population\": \"200000\",\n        \"url\": \"https://swapi.co/api/planets/1/\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/characters",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"characters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Character By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/character/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"character",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:8082",
+			"type": "string"
+		}
+	]
+}
