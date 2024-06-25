@@ -1,4 +1,4 @@
-# Configuracion-Arch
+# My Arch Configuration
 
 ## Steps
 
